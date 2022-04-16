@@ -1,0 +1,86 @@
+
+
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+}
+.header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    top: 0;
+    box-shadow: 0 0 10px 0 #bbbbbb;
+}
+.header img{
+    display: flex;
+    justify-items: center;
+    width: 73px;
+    height: 75px;
+    margin-left: 10px;
+}
+.icon{
+    font-size: xx-large;
+    margin-right: 15px;
+}
+.messages{
+    background-color: #e5e5e5;
+    width: 100%;
+    height: 700px;
+
+}
+.write{
+    position: fixed;
+    box-shadow: 0 0 10px 0 #bbbbbb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    bottom: 0;
+    box-shadow: 0 0 10px 0 #bbbbbb;
+}
+.writemessage{
+    display: flex;
+    justify-content: left;
+    margin-left: 15px;
+    width: 215px;
+   
+    align-items: center;
+    text-align: left;
+    color: #000000;
+}
+.messagebox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.75rem;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffffff;
+}
+.messagebox input{
+    border: none;
+    width: 80%;
+    font-size: large;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    height: 26px;
+}
+
+

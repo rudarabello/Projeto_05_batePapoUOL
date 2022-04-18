@@ -1,7 +1,6 @@
-
-
 *{
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 .container{
     display: flex;
@@ -18,7 +17,6 @@
     background-color: #ffffff;
     width: 100%;
     height: 80px;
-    z-index: 1;
     top: 0;
     box-shadow: 0 0 10px 0 #bbbbbb;
 }
@@ -31,56 +29,146 @@
 }
 .icon{
     font-size: xx-large;
-    margin-right: 15px;
+    margin-right: 35px;
+    height: 32px;
+    width: 32px;
 }
 .messages{
     background-color: #e5e5e5;
     width: 100%;
-    height: 700px;
-
+    font-family: 'Roboto', sans-serif;
 }
-.write{
-    position: fixed;
+
+.body{
+    background-color: #e5e5e5;
+    width: 100%;
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+
+.messagebox{
+    bottom: 0;
+    background-color: #ffffff;
     box-shadow: 0 0 10px 0 #bbbbbb;
+    bottom: 0;
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
     width: 100%;
     height: 80px;
-    z-index: 1;
-    bottom: 0;
-    box-shadow: 0 0 10px 0 #bbbbbb;
 }
-.writemessage{
+
+.messagebox form{
     display: flex;
-    justify-content: left;
-    margin-left: 15px;
-    width: 215px;
-   
-    align-items: center;
-    text-align: left;
-    color: #000000;
-}
-.messagebox{
-    width: 100%;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0.75rem;
-    position: fixed;
-    bottom: 0;
-    background-color: #ffffff;
+    width: 98%;
 }
 .messagebox input{
     border: none;
     width: 80%;
     font-size: large;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     height: 26px;
+    margin-left: 20px;
+   
+}
+.messagebox button{
+    align-items: flex-end;
+    color: #ffffff;
+    height: 56px;
+    width: 61px;
+    margin: 0;
+    padding: 0;
+}
+::placeholder {
+    font-weight: 500;
+    color: #696969;
+}
+.initial form input{
+    height: 70px;
+}
+.messages.private {
+    background-color: #ffdede;
+}
+.messages.alert {
+    background-color: #dcdcdc;
+}
+.message-line {
+    word-break: break-word;
+}
+.messages {
+    background-color: #ffffff;
+}
+.time {
+    color: #aaa;
+    margin-right: 10px;
+}
+.name {
+    margin-right: 5px;
+    font-weight: bold;
 }
 
+.initial {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+}
 
+.initial img {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 120px;
+}
+
+.initial form {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.initial form input {
+    padding: 0.5rem;
+    width: 90%;
+    text-align: center;
+    font-size: 1.1rem;
+    border: 1px solid #D7D7D7;
+    border-radius: 3px;
+}
+
+.initial .loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.none {
+    display: none !important;
+}
+button{
+    margin: 30px;
+    height: 45px;
+    width: 109px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;;
+}
